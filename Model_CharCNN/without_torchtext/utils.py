@@ -52,7 +52,7 @@ def get_pandas_df(filename):
     Load the data into Pandas.DataFrame object
     This will be used to convert data to torchtext object
     '''
-    with open(filename, 'r') as datafile:
+    with open('/content/Text-Classification-Models-Pytorch/data/ag_news.train', 'r') as datafile:
         data = [line.strip().split(',', maxsplit=1) for line in datafile]
         data_text = list(map(lambda x: x[1], data))
         data_label = list(map(lambda x: parse_label(x[0]), data))
