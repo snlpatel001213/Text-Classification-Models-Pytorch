@@ -10,7 +10,7 @@ from torch import nn
 
 if __name__=='__main__':
     config = Config()
-    train_file = '../data/ag_news.train'
+    train_file = '/content/Text-Classification-Models-Pytorch/data/ag_news.train'
     if len(sys.argv) > 2:
         train_file = sys.argv[1]
     test_file = '../data/ag_news.test'
